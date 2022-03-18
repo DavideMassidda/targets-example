@@ -1,0 +1,7 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|iteration|parent|children|seconds|warnings|error
+get_lm_fit|function|2c2affaa0c462c3a||||||||||||||
+get_plot_obs|function|414e66fb528651d0||||||||||||||
+raw_data_file|stem|99183c13916c6a59|8a3f96b3359fdec0|ef46db3751d8e999|2110307107|Data/raw-data.csv|t19018.7136046181s|0072a1a570cdd1fa|101|file|vector|||0||
+my_data|stem|30c53499956ab338|c620b7daeb4e45df|9080fb8963def1bc|-1878874315||t19019.4107357036s|afc3bd6040499853|208|rds|vector|||0||
+plot_obs|stem|d5de67bb4ccbc11a|9b452c60e9716ae8|b7cf2de9e0cd4634|-1005960786||t19019.4107371965s|2cf2175eb3b5912a|51433|rds|vector|||0.03||
+lm_fit|stem|193980d1f8253ab4|d2c26b78256ef2b2|fb1eb63495ffe0d2|-1812269390||t19019.4107377277s|79be55b551cc39e1|2347|rds|vector|||0||
