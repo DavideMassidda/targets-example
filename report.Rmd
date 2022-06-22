@@ -1,0 +1,27 @@
+---
+title: "Results and outputs"
+author: "ARCA"
+output: html_document
+date: '2022-06-22'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(targets)
+```
+
+## Fitted model
+
+Here you can see the output of the linear model:
+
+```{r}
+summary(tar_read(lm_fit))
+```
+
+## Figures
+
+Boxplots showing differences between groups:
+
+```{r}
+tar_read(plot_obs)
+```

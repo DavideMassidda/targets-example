@@ -17,5 +17,5 @@ list(
     # Descriptive statistics
     tar_target(plot_obs, get_plot_obs(my_data)),
     # Inferential statistics
-    tar_target(lm_fit, get_lm_fit(my_data))
+    tar_target(lm_fit, get_lm_fit(my_data, .contr_fun=contr.treatment))
 )
