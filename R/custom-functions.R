@@ -1,8 +1,3 @@
-# Create a pretty boxplot
-get_plot_obs <- function(.data) {
-    ggplot(.data, aes(x=Group, y=Value, fill=Group)) + geom_boxplot()
-}
-
 # Linear model with advanced manipulations
 get_lm_fit <- function(.data, .levels=NULL, .contr_fun=contr.treatment) {
     if(is.null(.levels)) {

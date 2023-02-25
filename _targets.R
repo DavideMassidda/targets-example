@@ -15,7 +15,9 @@ list(
     tar_target(raw_data_file, "Data/raw-data.csv", format = "file"),
     tar_target(my_data, read.csv(raw_data_file)),
     # Descriptive statistics
-    tar_target(plot_obs, get_plot_obs(my_data)),
+    tar_target(plot_obs,
+        ggplot(my_data, aes(x=Group, y=Value, fill=Group)) + geom_boxplot()
+    ),
     # Inferential statistics
     tar_target(lm_fit, get_lm_fit(my_data, .contr_fun=contr.treatment))
 )
