@@ -1,13 +1,12 @@
 library("targets")
 
 #---- Settings ----
-# Load packages
-library("tidyverse")
-
-# Source custom functions
-source("R/custom-functions.R")
 # Options
 options(tidyverse.quiet = TRUE)
+# Load packages
+tar_option_set(packages ="tidyverse")
+# Source custom functions
+source("R/custom-functions.R")
 
 #---- Workflow ----
 list(

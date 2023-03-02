@@ -15,7 +15,8 @@ library(targets)
 Here you can see the output of the linear model:
 
 ```{r}
-summary(tar_read(lm_fit))
+model <- tar_read("lm_fit")
+summary(model)
 ```
 
 ## Figures
